@@ -1,0 +1,98 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("paris.jpg");
+  background-size: cover;
+  background-position:center;
+ background-repeat: no-repeat;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15pt;
+  width: 100%;
+  height:100vh;
+  overflow: hidden;
+}
+.wrapper{
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header{
+  text-shadow: 0 0 10px yellow, 5px -10px 5px pink;
+  position: absolute;
+  transform: translateY(200px);
+  margin-top: 5rem;
+  margin-bottom: 0;
+  text-align: center;
+  height: 20%; 
+  word-spacing: 20px; 
+  padding:0;
+  transition: text-shadow 0.5s ease;
+  animation: 4s linear 0s infinite running myAn;
+  
+}
+.wrapper h1,h2{
+  color:white;
+  font-size: 80px;
+}
+/*a Mahal*/
+h2{
+  font-size: 100px;
+  margin-top: 10px;
+}
+.user_input{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border: 2px solid grey;
+}
+.ja{
+  transform: translateY(1080px) translateX(200px);
+  z-index:2;
+}
+.japee{
+  position: relative;
+  transform: translate(-120px, 70px);
+}
+/*
+.ja2{
+  position: relative;
+  transform: translateY(-1700px) translateX(-200px) rotate(-40deg);
+  z-index: -1;
+}
+.ja3{
+  position: relative;
+  transform: translate(250px, -2700px) rotate(40deg);
+  z-index:-1;
+*/
+
+.year{
+  color:red;
+  font-size: 80px;
+}
+@keyframes myAn{
+  10%{text-shadow: 0 0 10px purple, 5px -10px 5px mediumpurple};
+  20%{text-shadow: 0 0 10px yellow, 5px -10px 5px pink};
+  30%{text-shadow: 0 0 10px green, 5px -10px 5px greenyellow};
+  40%{text-shadow: 0 0 10px red, 5px -10px 5px orange};
+}
+
+button{
+  position:absolute;
+  color:white;
+  width: 500px;
+  height: 200px;
+  font-size: 100px;
+  background: inherit;
+  border: 5px solid white;
+  border-radius: 30px;
+  top:40%;
+}
+button:active{
+  color:blue;
+  background: black;
+}
